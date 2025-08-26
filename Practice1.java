@@ -17,7 +17,7 @@ public class Practice1 {
         double discount40 = 0.40;
         
 
-        System.out.println("Cuantos computadoras desea comprar? ");
+        System.out.println("Cuantos computadores desea comprar? ");
 
         int computersQuantity = sc.nextInt();
    
