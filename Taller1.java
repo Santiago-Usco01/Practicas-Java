@@ -44,30 +44,29 @@ public class Taller1 {
 
             System.out.println(nombreDeCadaAlumno[i] + ": " + notaDeCadaAlumno[i]);
         }
-        
+
         String suspendidos = ("");
-        
+
         for (int i = 0; i < n; i++) {
 
-            
             if (notaDeCadaAlumno[i] >= 3) {
                 System.out.println(nombreDeCadaAlumno[i] + " ha aprobado con un " + notaDeCadaAlumno[i]);
-            } 
-            
-            if (notaDeCadaAlumno[i]<3) {
-                
-            if(!suspendidos.isEmpty())  {  
-                
-                suspendidos+=", ";}
-            
-            suspendidos+= nombreDeCadaAlumno[i];
-               
-            } 
-            
             }
-        System.out.println("Han suspendido: " +suspendidos);
-        
-        
+
+            if (notaDeCadaAlumno[i] < 3) {
+
+                if (!suspendidos.isEmpty()) {
+
+                    suspendidos += ", ";
+                }
+
+                suspendidos += nombreDeCadaAlumno[i];
+
+            }
+
+        }
+        System.out.println("Han suspendido: " + suspendidos);
+
         double max = notaDeCadaAlumno[0];
         double min = notaDeCadaAlumno[0];
 
@@ -99,9 +98,7 @@ public class Taller1 {
         System.out.println(nombreMax + " fue la nota mas alta con un " + max);
         System.out.println(nombreMin + " fue la nota mas baja con un " + min);
         System.out.println("El promedio de las notas del curso fue: " + media);
-        
-                                  
-         
+
     }
     
     
